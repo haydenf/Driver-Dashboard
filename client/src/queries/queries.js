@@ -34,6 +34,15 @@ const getUserDataQuery = gql`
   }
 `;
 
+const getTripDataQuery = gql`
+  query getTripDataDetails($tripId: ID!) {
+    trip(id: $tripId) {
+      speed
+      rpm
+    }
+  }
+`;
+
 const getDashboardAllDataQuery = gql`
   query getDataForCar($vehicleId: ID!) {
     car(id: $vehicleId) {
@@ -98,6 +107,7 @@ const getDashboardAllDataQuery = gql`
         }
       }
       trips {
+        id
         litres
         litresPerHundredKm
         distance
@@ -120,4 +130,5 @@ export {
   getUserDataQuery,
   getDashboardAllDataQuery,
   LOGIN_QUERY,
+  getTripDataQuery,
 };

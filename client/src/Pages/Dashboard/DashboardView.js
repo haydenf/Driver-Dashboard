@@ -3,6 +3,7 @@ import CarList from '../../Components/CarList';
 import DashboardHeader from '../../Components/DashboardHeader';
 import CarData from '../../Components/CarData';
 import Footer from '../../Components/Footer';
+import TripData from '../../Components/TripData';
 
 export default function DashboardView() {
   const [vehicleIdSelectionState, setVehicleIdSelectionState] = useState(null);
@@ -16,6 +17,7 @@ export default function DashboardView() {
         <DashboardHeader vehicleIdState={vehicleIdSelectionState} />
         <CarList vehicleSelection={selectVehicle} />
         <CarData vehicleIdState={vehicleIdSelectionState} />
+        <TripData />
         <Footer />
       </>
     );
@@ -23,6 +25,8 @@ export default function DashboardView() {
     return (
       <>
         <CarList vehicleSelection={selectVehicle} />
+        <TripData />
+
         <div
           style={{ height: '500px', textAlign: 'center', paddingTop: '50px' }}
         >

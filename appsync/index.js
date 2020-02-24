@@ -60,9 +60,13 @@ async function getRecentTrip(vehicleId, authToken) {
   return await fetchJSON(recentTrip.toString(), {}, authToken);
 }
 
-// async function getTripDetailsforVehicle(tripId, authToken) {
-//   return await fetchJSON(`${API_URL}trips/${tripId}/tripDetails`, {}, authToken);
-// }
+async function getTripDetailsforVehicle(tripId, authToken) {
+  return await fetchJSON(
+    `${API_URL}trips/${tripId}/tripDetails`,
+    {},
+    authToken
+  );
+}
 
 async function getDiagnosticIssueForVehicle(vehicleId, authToken) {
   console.log(`${API_URL}/Vehicles/${vehicleId}/diagnosticTroubleCodes`);
@@ -93,12 +97,13 @@ async function getTripSummaryData(userId, authToken) {
   return await fetchJSON(travelDistanceTotalUrl.toString(), {}, authToken);
 }
 
-async function getDetailsForVehicle(userId, vehicleId, authToken) {
+async function getDetailsForVehicle(userId, vehicleId, authToken, tripId) {
   const [
     vehicleData,
     refillData,
     tripSummaryData,
     tripsForVehicle,
+    tripDetailsforVehicle,
     diagnosticIssueForVehicle,
     recentTrip
   ] = await Promise.all([
@@ -106,6 +111,7 @@ async function getDetailsForVehicle(userId, vehicleId, authToken) {
     getRefillData(vehicleId, authToken),
     getTripSummaryData(userId, authToken),
     getTripsForVehicle(vehicleId, authToken),
+    getTripDetailsforVehicle(tripId, authToken),
     getDiagnosticIssueForVehicle(vehicleId, authToken),
     getRecentTrip(vehicleId, authToken)
   ]);
@@ -114,6 +120,7 @@ async function getDetailsForVehicle(userId, vehicleId, authToken) {
 
   const finalResult = {
     id: vehicleId,
+    tripId: tripId,
     make: vehicleData.make,
     model: vehicleData.model,
     odometer: vehicleData.calculatedOdometer,
@@ -174,6 +181,18 @@ exports.handler = async (event, context) => {
       );
 
       return vehicleData;
+    }
+
+    case "trip": {
+      const tripId = event.arguments.id;
+
+      const tripData = await getDetailsForVehicle(
+        headers.userid,
+        tripId,
+        headers.authorization
+      );
+
+      return tripData;
     }
 
     case "login": {
