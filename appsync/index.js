@@ -14,7 +14,7 @@ async function fetchJSON(url, options, authToken) {
 }
 
 async function postJSON(url, payload, options) {
-  console.log(url, payload, options);
+  console.log(`URL<PAYLOAD<OPTIONS<POSTJSON`, url, payload, options);
   const rawResponse = await fetch(url, {
     method: "POST",
     headers: {
@@ -61,6 +61,10 @@ async function getRecentTrip(vehicleId, authToken) {
 }
 
 async function getTripDetailsforVehicle(tripId, authToken) {
+  console.log(
+    "TRIP DETAIL LOG PLEASE LOOK AT THIS",
+    `${API_URL}trips/${tripId}/tripDetails`
+  );
   return await fetchJSON(
     `${API_URL}trips/${tripId}/tripDetails`,
     {},
@@ -97,6 +101,17 @@ async function getTripSummaryData(userId, authToken) {
   return await fetchJSON(travelDistanceTotalUrl.toString(), {}, authToken);
 }
 
+async function getDetailsForTrip(authToken, tripId) {
+  const [tripDetailsforVehicle] = await Promise.all([
+    getDetailsForTrip(authToken, tripId)
+  ]);
+  console.log(`PLEASE LOOK FOR ME GETDETAILS FOR TRIP`);
+  const finalTrip = {
+    id: tripDetailsforVehicle
+  };
+  return finalTrip;
+}
+
 async function getDetailsForVehicle(userId, vehicleId, authToken, tripId) {
   const [
     vehicleData,
@@ -116,7 +131,7 @@ async function getDetailsForVehicle(userId, vehicleId, authToken, tripId) {
     getRecentTrip(vehicleId, authToken)
   ]);
 
-  console.log("refillData PLEASE LOOK AT THIS LOG", recentTrip);
+  console.log("refillData PLEASE LOOK AT THIS LOG", tripDetailsforVehicle);
 
   const finalResult = {
     id: vehicleId,
@@ -154,7 +169,8 @@ async function getDetailsForVehicle(userId, vehicleId, authToken, tripId) {
     timeTraveled: tripSummaryData.TODO,
     trips: tripsForVehicle,
     lifeLitresPerHundredKm: tripsForVehicle,
-    recentTrip: recentTrip
+    recentTrip: recentTrip,
+    tripDetails: tripDetailsforVehicle
   };
   return finalResult;
 }
@@ -183,10 +199,10 @@ exports.handler = async (event, context) => {
       return vehicleData;
     }
 
-    case "trip": {
+    case "tripDetail": {
       const tripId = event.arguments.id;
 
-      const tripData = await getDetailsForVehicle(
+      const tripData = await getDetailsForTrip(
         headers.userid,
         tripId,
         headers.authorization
