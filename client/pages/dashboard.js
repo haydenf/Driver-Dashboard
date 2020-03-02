@@ -1,5 +1,5 @@
 import DashboardView from '../src/pages/Dashboard/DashboardView';
-import React from 'react';
+import React, {useState} from 'react';
 import Cookies from 'js-cookie';
 import Cookiez from 'next-cookies';
 import fetch from 'node-fetch';
@@ -12,21 +12,13 @@ const link = createHttpLink({ uri: '/graphql', fetch: fetch });
 
 export default function DashboardPage(props) {
   // TODO if not logged in redirect to login
-  if (
-    Cookies.get('GofarDashboardToken') &&
-    Cookies.get('GofarDashboardUserId')
-  ) {
-    <Redirect to="/dashboard" />;
-  } else {
-    <Redirect to="/login" />;
-  }
 
   const client = new ApolloClient({
     uri:
       'https://jt63wdhqqre6rpjo5lnylfhjqm.appsync-api.ap-southeast-2.amazonaws.com/graphql',
     headers: {
-      Authorization: Cookies.get('GofarDashboardToken'),
-      UserID: Cookies.get('GofarDashboardUserId'),
+      Authorization: props.token,
+      UserID: props.userId,
       'X-API-KEY': 'da2-d5trhzrnqraznclr2teue2bmmu',
     },
     fetch,
@@ -40,7 +32,14 @@ export default function DashboardPage(props) {
 }
 
 DashboardPage.getInitialProps = ctx => {
+<<<<<<< HEAD
+=======
+  const token = Cookiez(ctx).GofarDashboardToken;
+  const userId = Cookiez(ctx).GofarDashboardUserId;
+>>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
   return {
     cookiez: Cookiez(ctx) || '',
+    token,
+    userId
   };
 };

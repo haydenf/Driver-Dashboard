@@ -1,6 +1,5 @@
 import React from 'react';
 import fetch from 'node-fetch';
-import Cookies from 'js-cookie';
 import Cookiez from 'next-cookies';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
@@ -10,16 +9,13 @@ import { useRouter } from 'next/router';
 
 function handleSuccessfulLogin(router) {
   return function(loginResult) {
-    Cookies.set('GofarDashboardUserId', loginResult.userId, { expires: 7 });
-    Cookies.set('GofarDashboardToken', loginResult.authToken, { expires: 7 });
+    document.cookie = `GofarDashboardUserId=${loginResult.userId};`
+    document.cookie = `GofarDashboardToken=${loginResult.authToken};`
     router.push('/dashboard');
   };
 }
 
 export default function LoginPage(props) {
-  if (props.authToken) {
-    return <Redirect to="/dashboard" />;
-  }
 
   const router = useRouter();
 
@@ -43,6 +39,10 @@ export default function LoginPage(props) {
 }
 
 LoginPage.getInitialProps = ctx => {
+<<<<<<< HEAD:client/pages/index.js
+=======
+  console.log(`THIS IS COMING FROM INDEX`,ctx)
+>>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9:client/pages/login.js
   return {
     cookiez: Cookiez(ctx) || '',
   };
