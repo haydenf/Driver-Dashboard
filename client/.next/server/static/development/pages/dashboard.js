@@ -106,35 +106,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_pages_Dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/pages/Dashboard/DashboardView */ "./src/pages/Dashboard/DashboardView.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-<<<<<<< HEAD
-/* harmony import */ var next_cookies__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next-cookies */ "next-cookies");
-/* harmony import */ var next_cookies__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_cookies__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-fetch */ "node-fetch");
-/* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-apollo */ "react-apollo");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/pages/dashboard.js";
-=======
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! js-cookie */ "js-cookie");
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_cookies__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-cookies */ "next-cookies");
 /* harmony import */ var next_cookies__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_cookies__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-apollo */ "react-apollo");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/pages/dashboard.js";
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/pages/dashboard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -143,25 +127,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-<<<<<<< HEAD
-const link = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_6__["createHttpLink"])({
-=======
 
-
-const link = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_8__["createHttpLink"])({
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+const link = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_7__["createHttpLink"])({
   uri: '/graphql',
   fetch: node_fetch__WEBPACK_IMPORTED_MODULE_4___default.a
 });
 function DashboardPage(props) {
   // TODO if not logged in redirect to login
-<<<<<<< HEAD
-  const cookiezToken = document.cookie.replace(/(?:(?:^|.*;\s*)GofarDashboardToken\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-  const cookiezUser = document.cookie.replace(/(?:(?:^|.*;\s*)GofarDashboardUserId\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-  const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_4___default.a({
-=======
-  const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_6___default.a({
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+  const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_5___default.a({
     uri: 'https://jt63wdhqqre6rpjo5lnylfhjqm.appsync-api.ap-southeast-2.amazonaws.com/graphql',
     headers: {
       Authorization: props.token,
@@ -170,29 +143,17 @@ function DashboardPage(props) {
     },
     fetch: (node_fetch__WEBPACK_IMPORTED_MODULE_4___default())
   });
-<<<<<<< HEAD
-  return __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_5__["ApolloProvider"], {
+  return __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_6__["ApolloProvider"], {
     client: client,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
-=======
-  return __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_7__["ApolloProvider"], {
-    client: client,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+      lineNumber: 27
     },
     __self: this
   }, __jsx(_src_pages_Dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_0__["default"], {
     __source: {
       fileName: _jsxFileName,
-<<<<<<< HEAD
-      lineNumber: 31
-=======
-      lineNumber: 29
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+      lineNumber: 28
     },
     __self: this
   }));
@@ -416,8 +377,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card_FuelEconomyCard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Card/FuelEconomyCard */ "./src/Components/Card/FuelEconomyCard.js");
 /* harmony import */ var _GoogleMap_GoogleMap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./GoogleMap/GoogleMap */ "./src/Components/GoogleMap/GoogleMap.js");
 /* harmony import */ var _AntdTable_AntdTableComponent__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./AntdTable/AntdTableComponent */ "./src/Components/AntdTable/AntdTableComponent.js");
+/* harmony import */ var _FuelLeft__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./FuelLeft */ "./src/Components/FuelLeft.js");
 var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/CarData.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -449,7 +412,7 @@ function CarData(props) {
     return __jsx(_LoadingSpinner__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 26
       },
       __self: this
     });
@@ -457,7 +420,7 @@ function CarData(props) {
     return __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 28
       },
       __self: this
     }, "Error! ", error);
@@ -466,20 +429,29 @@ function CarData(props) {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 31
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 32
       },
       __self: this
-    }, __jsx(_Card_LastFillUpCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, __jsx(_FuelLeft__WEBPACK_IMPORTED_MODULE_16__["default"], {
+      refillData: data.car.refillData,
+      trips: data.car.trips,
+      allData: data.car,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33
+      },
+      __self: this
+    }), __jsx(_Card_LastFillUpCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
       lastFillUpData: data.car.refillData,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 38
       },
       __self: this
     }), __jsx(_Card_FuelLeftCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -489,32 +461,19 @@ function CarData(props) {
       currentOdo: data.car.odometer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 39
       },
       __self: this
     }), __jsx(_Card_DiagnosticCard__WEBPACK_IMPORTED_MODULE_7__["default"], {
       diagnosticIssue: data.car.diagnosticIssue,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 45
       },
       __self: this
     }), __jsx(_Card_BusinessRatioCard__WEBPACK_IMPORTED_MODULE_8__["default"], {
       businessRatio: data.car.businessRatio,
       businessTotal: data.car.businessTotal,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 40
-      },
-      __self: this
-    })), __jsx("div", {
-      className: "ui container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45
-      },
-      __self: this
-    }, __jsx(_GoogleMap_GoogleMap__WEBPACK_IMPORTED_MODULE_14__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 46
@@ -524,20 +483,33 @@ function CarData(props) {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 51
+      },
+      __self: this
+    }, __jsx(_GoogleMap_GoogleMap__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52
+      },
+      __self: this
+    })), __jsx("div", {
+      className: "ui container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
+        lineNumber: 55
       },
       __self: this
     }, __jsx(_Card_AverageSpeedCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
       speed: data.car.averageSpeed,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 56
       },
       __self: this
     }), __jsx(_Card_TravelDistanceTotalCard__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -545,38 +517,11 @@ function CarData(props) {
       distanceTotalThisYear: data.car.travelDistanceThisYear,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 57
       },
       __self: this
     }), __jsx(_Card_TimeInCarCard__WEBPACK_IMPORTED_MODULE_11__["default"], {
       timeInCar: data.car.timeInCar,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55
-      },
-      __self: this
-    }))), __jsx("div", {
-      className: "ui container",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 58
-      },
-      __self: this
-    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 59
-      },
-      __self: this
-    }, __jsx(_Card_EmissionsCard__WEBPACK_IMPORTED_MODULE_12__["default"], {
-      emission: data.car.emissions,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 60
-      },
-      __self: this
-    }), __jsx(_Card_FuelEconomyCard__WEBPACK_IMPORTED_MODULE_13__["default"], {
-      fuelEconomy: data.car.fuelEconomy,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 61
@@ -589,11 +534,38 @@ function CarData(props) {
         lineNumber: 64
       },
       __self: this
+    }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 65
+      },
+      __self: this
+    }, __jsx(_Card_EmissionsCard__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      emission: data.car.emissions,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 66
+      },
+      __self: this
+    }), __jsx(_Card_FuelEconomyCard__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      fuelEconomy: data.car.fuelEconomy,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67
+      },
+      __self: this
+    }))), __jsx("div", {
+      className: "ui container",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 70
+      },
+      __self: this
     }, __jsx(_AntdTable_AntdTableComponent__WEBPACK_IMPORTED_MODULE_15__["default"], {
       tripData: data.car.trips,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 71
       },
       __self: this
     })));
@@ -2044,6 +2016,42 @@ const Footer = () => {
 
 /***/ }),
 
+/***/ "./src/Components/FuelLeft.js":
+/*!************************************!*\
+  !*** ./src/Components/FuelLeft.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/FuelLeft.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+ // import LoadingSpinner from './LoadingSpinner';
+
+/* harmony default export */ __webpack_exports__["default"] = (function (props) {
+  const refillData = props.refillData;
+  const trips = props.trips;
+  const refillStamp = new Date(refillData[0].timestamp);
+  const filteredTrips = trips.filter(trips => {
+    return refillStamp <= new Date(trips.endTime);
+  });
+  return __jsx("div", {
+    style: {
+      padding: '10px 140px 0px 140px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, console.log(refillStamp), console.log(`this is from filter`, filteredTrips), console.log(totalLitres));
+});
+
+/***/ }),
+
 /***/ "./src/Components/GoogleMap/GoogleMap.js":
 /*!***********************************************!*\
   !*** ./src/Components/GoogleMap/GoogleMap.js ***!
@@ -2066,7 +2074,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-console.log(`Coming from google maps`, _Google_Secret__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
 class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   // constructor(props) {
@@ -2102,14 +2109,14 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 38
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Header"], {
       icon: true,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40
+        lineNumber: 39
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
@@ -2118,7 +2125,7 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       size: "small",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 40
       },
       __self: this
     }), "Parking Location"), __jsx("div", {
@@ -2129,7 +2136,7 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 43
       },
       __self: this
     }, __jsx(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["Map"], {
@@ -2141,7 +2148,7 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 44
       },
       __self: this
     })));
@@ -2150,11 +2157,7 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["GoogleApiWrapper"])({
-<<<<<<< HEAD
-  apiKey: `${_Google_Secret__WEBPACK_IMPORTED_MODULE_4__["default"]}`
-=======
-  apiKey: _Google_Secret__WEBPACK_IMPORTED_MODULE_3__["default"]
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+  apiKey: _Google_Secret__WEBPACK_IMPORTED_MODULE_4__["default"]
 })(SimpleMap));
 
 /***/ }),
@@ -2528,16 +2531,6 @@ module.exports = require("google-maps-react");
 
 /***/ }),
 
-<<<<<<< HEAD
-/***/ "luxon":
-/*!************************!*\
-  !*** external "luxon" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("luxon");
-=======
 /***/ "js-cookie":
 /*!****************************!*\
   !*** external "js-cookie" ***!
@@ -2546,7 +2539,17 @@ module.exports = require("luxon");
 /***/ (function(module, exports) {
 
 module.exports = require("js-cookie");
->>>>>>> 7562e0bd788e81e7dead2c76ea14beb591c3e5e9
+
+/***/ }),
+
+/***/ "luxon":
+/*!************************!*\
+  !*** external "luxon" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("luxon");
 
 /***/ }),
 
