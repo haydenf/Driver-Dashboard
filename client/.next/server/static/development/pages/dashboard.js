@@ -110,15 +110,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_cookies__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_cookies__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! node-fetch */ "node-fetch");
 /* harmony import */ var node_fetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(node_fetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-apollo */ "react-apollo");
-/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/pages/dashboard.js";
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! apollo-boost */ "apollo-boost");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(apollo_boost__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-apollo */ "react-apollo");
+/* harmony import */ var react_apollo__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_apollo__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! apollo-link-http */ "apollo-link-http");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(apollo_link_http__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/pages/dashboard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
@@ -127,8 +125,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-const link = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_7__["createHttpLink"])({
+const link = Object(apollo_link_http__WEBPACK_IMPORTED_MODULE_6__["createHttpLink"])({
   uri: '/graphql',
   fetch: node_fetch__WEBPACK_IMPORTED_MODULE_3___default.a
 });
@@ -136,7 +133,7 @@ function DashboardPage(props) {
   // TODO if not logged in redirect to login
   const cookiezToken = document.cookie.replace(/(?:(?:^|.*;\s*)GofarDashboardToken\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   const cookiezUser = document.cookie.replace(/(?:(?:^|.*;\s*)GofarDashboardUserId\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-  const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_5___default.a({
+  const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_4___default.a({
     uri: 'https://jt63wdhqqre6rpjo5lnylfhjqm.appsync-api.ap-southeast-2.amazonaws.com/graphql',
     headers: {
       Authorization: cookiezToken,
@@ -145,17 +142,17 @@ function DashboardPage(props) {
     },
     fetch: (node_fetch__WEBPACK_IMPORTED_MODULE_3___default())
   });
-  return __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_6__["ApolloProvider"], {
+  return __jsx(react_apollo__WEBPACK_IMPORTED_MODULE_5__["ApolloProvider"], {
     client: client,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }, __jsx(_src_pages_Dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_0__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }));
@@ -182,12 +179,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! antd */ "antd");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/AntdTable/AntdTableComponent.js";
+/* harmony import */ var luxon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! luxon */ "luxon");
+/* harmony import */ var luxon__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(luxon__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
+/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__);
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/AntdTable/AntdTableComponent.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -198,7 +202,6 @@ class AntdTableComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
     super(props);
 
     _defineProperty(this, "handleChange", (pagination, filters, sorter) => {
-      console.log('Various parameters', pagination, filters, sorter);
       this.setState({
         filteredInfo: filters,
         sortedInfo: sorter
@@ -244,9 +247,14 @@ class AntdTableComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
 
   render() {
     const trips = this.props.tripData;
-    {
-      console.log(trips);
-    }
+    const processedTrips = trips.map(trip => {
+      var _trip$distance;
+
+      return _objectSpread({}, trip, {
+        startTime: luxon__WEBPACK_IMPORTED_MODULE_2__["DateTime"].fromISO(trip.startTime).toFormat('yyyy LLL dd'),
+        distance: (_trip$distance = trip.distance) === null || _trip$distance === void 0 ? void 0 : _trip$distance.toFixed(2)
+      });
+    });
     let {
       sortedInfo,
       filteredInfo
@@ -255,45 +263,19 @@ class AntdTableComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
     filteredInfo = filteredInfo || {};
     const columns = [{
       title: 'Time',
-      dataIndex: 'startTime',
-      key: 'startTime',
-      sorter: (a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0,
+      dataIndex: `startTime`,
+      sorter: (a, b) => a.startTime < b.startTime ? -1 : a.startTime > b.startTime ? 1 : 0,
       sortOrder: sortedInfo.columnKey === 'startTime' && sortedInfo.order
     }, {
-      title: 'Distance',
+      title: 'Distance (KM)',
       dataIndex: 'distance',
-      key: 'distance',
       sorter: (a, b) => a.distance - b.distance,
-      sortOrder: sortedInfo.columnKey === 'distance' && sortedInfo.order
+      sortOrder: sortedInfo.columnKey === 'distance' && sortedInfo.order,
+      filteredValue: filteredInfo.distance || null,
+      onFilter: (value, record) => record.distance.includes(value)
     }, {
       title: 'Tags',
-      dataIndex: 'tags',
-      render: tags => __jsx("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 78
-        },
-        __self: this
-      }, tags.map(tag => {
-        let color = 'green';
-
-        if (tag === 'vacation') {
-          color = 'red';
-        } else if (tag === 'busuiness') {
-          color = 'blue';
-        }
-
-        return __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Tag"], {
-          color: color,
-          key: tag,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 87
-          },
-          __self: this
-        }, tag.toUpperCase());
-      })),
-      key: 'tagType',
+      dataIndex: 'tags.tagName',
       filters: [{
         text: 'busuiness',
         value: 'busuiness'
@@ -305,85 +287,51 @@ class AntdTableComponent extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Co
       onFilter: (value, record) => record.tags.includes(value)
     }, {
       title: 'Start Location',
-      dataIndex: 'startLocation',
-      key: 'geoPoint',
-      filters: [{
-        text: 'Sydney',
-        value: 'Sydney'
-      }, {
-        text: 'Brisbane',
-        value: 'Brisbane'
-      }],
-      filteredValue: filteredInfo.startLocation || null,
-      onFilter: (value, record) => record.startLocation.includes(value)
+      dataIndex: 'startLocation.displayName'
     }, {
       title: 'End Location',
-      dataIndex: 'endlocation',
-      key: 'endlocation',
-      filters: [{
-        text: 'Sydney',
-        value: 'Sydney'
-      }, {
-        text: 'Brisbane',
-        value: 'Brisbane'
-      }],
-      filteredValue: filteredInfo.endlocation || null,
-      onFilter: (value, record) => record.endlocation.includes(value)
+      dataIndex: 'endLocation.displayName'
     }];
-    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], {
+    return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Segment"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 128
+        lineNumber: 101
       },
       __self: this
     }, __jsx("div", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 129
+        lineNumber: 102
       },
       __self: this
     }, __jsx("div", {
       className: "table-operations",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130
+        lineNumber: 103
       },
       __self: this
     }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-      onClick: this.setTimeSort,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 131
-      },
-      __self: this
-    }, "Sort time"), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-      onClick: this.setDistanceSort,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 132
-      },
-      __self: this
-    }, "Sort Distance"), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
       onClick: this.clearFilters,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 104
       },
       __self: this
     }, "Clear filters"), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
       onClick: this.clearAll,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134
+        lineNumber: 105
       },
       __self: this
     }, "Clear filters and sorters")), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Table"], {
       columns: columns,
-      dataSource: trips,
+      dataSource: processedTrips,
       onChange: this.handleChange,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 107
       },
       __self: this
     })));
@@ -424,10 +372,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Card_FuelEconomyCard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Card/FuelEconomyCard */ "./src/Components/Card/FuelEconomyCard.js");
 /* harmony import */ var _GoogleMap_GoogleMap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./GoogleMap/GoogleMap */ "./src/Components/GoogleMap/GoogleMap.js");
 /* harmony import */ var _AntdTable_AntdTableComponent__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./AntdTable/AntdTableComponent */ "./src/Components/AntdTable/AntdTableComponent.js");
-/* harmony import */ var _TripList__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./TripList */ "./src/Components/TripList.js");
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/CarData.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/CarData.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -459,7 +405,7 @@ function CarData(props) {
     return __jsx(_LoadingSpinner__WEBPACK_IMPORTED_MODULE_4__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 25
       },
       __self: this
     });
@@ -467,7 +413,7 @@ function CarData(props) {
     return __jsx("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 27
       },
       __self: this
     }, "Error! ", error);
@@ -476,27 +422,20 @@ function CarData(props) {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 30
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 31
       },
       __self: this
-    }, console.log(data.car), __jsx(_TripList__WEBPACK_IMPORTED_MODULE_16__["default"], {
-      trips: data.car.trips,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36
-      },
-      __self: this
-    }), __jsx(_Card_LastFillUpCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    }, __jsx(_Card_LastFillUpCard__WEBPACK_IMPORTED_MODULE_5__["default"], {
       lastFillUpData: data.car.refillData,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 32
       },
       __self: this
     }), __jsx(_Card_FuelLeftCard__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -506,15 +445,14 @@ function CarData(props) {
       currentOdo: data.car.odometer,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 33
       },
       __self: this
     }), __jsx(_Card_DiagnosticCard__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      diagnosticIssue: data.car.diagnosticIssue // diagnosticDetail={data.car.diagnosticDetail}
-      ,
+      diagnosticIssue: data.car.diagnosticIssue,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 39
       },
       __self: this
     }), __jsx(_Card_BusinessRatioCard__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -522,40 +460,40 @@ function CarData(props) {
       businessTotal: data.car.businessTotal,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 40
       },
       __self: this
     })), __jsx("div", {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 45
       },
       __self: this
     }, __jsx(_GoogleMap_GoogleMap__WEBPACK_IMPORTED_MODULE_14__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 46
       },
       __self: this
     })), __jsx("div", {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 48
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 49
       },
       __self: this
     }, __jsx(_Card_AverageSpeedCard__WEBPACK_IMPORTED_MODULE_9__["default"], {
       speed: data.car.averageSpeed,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 50
       },
       __self: this
     }), __jsx(_Card_TravelDistanceTotalCard__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -563,55 +501,55 @@ function CarData(props) {
       distanceTotalThisYear: data.car.travelDistanceThisYear,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 51
       },
       __self: this
     }), __jsx(_Card_TimeInCarCard__WEBPACK_IMPORTED_MODULE_11__["default"], {
       timeInCar: data.car.timeInCar,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 55
       },
       __self: this
     }))), __jsx("div", {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 58
       },
       __self: this
     }, __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_3__["Card"].Group, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 59
       },
       __self: this
     }, __jsx(_Card_EmissionsCard__WEBPACK_IMPORTED_MODULE_12__["default"], {
       emission: data.car.emissions,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 60
       },
       __self: this
     }), __jsx(_Card_FuelEconomyCard__WEBPACK_IMPORTED_MODULE_13__["default"], {
       fuelEconomy: data.car.fuelEconomy,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 61
       },
       __self: this
     }))), __jsx("div", {
       className: "ui container",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72
+        lineNumber: 64
       },
       __self: this
     }, __jsx(_AntdTable_AntdTableComponent__WEBPACK_IMPORTED_MODULE_15__["default"], {
       tripData: data.car.trips,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 73
+        lineNumber: 65
       },
       __self: this
     })));
@@ -637,7 +575,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_select__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_select__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _queries_queries__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../queries/queries */ "./src/queries/queries.js");
 /* harmony import */ var _LoadingSpinner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LoadingSpinner */ "./src/Components/LoadingSpinner.js");
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/CarList.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/CarList.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -715,7 +653,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/AverageSpeedCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/AverageSpeedCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -794,7 +732,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/BusinessRatioCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/BusinessRatioCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -879,13 +817,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/DiagnosticCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/DiagnosticCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 class DiagnosticCard extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render(props) {
+  render() {
     if (this.props.diagnosticIssue[0] === undefined || this.props.diagnosticIssue[0] === null) {
       return __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__["Card"], {
         className: "data-cards-r1",
@@ -1038,7 +976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/EmissionsCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/EmissionsCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1116,7 +1054,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/FuelEconomyCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/FuelEconomyCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1195,7 +1133,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/FuelLeftCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/FuelLeftCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1346,7 +1284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var reverse_geocode__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reverse-geocode */ "reverse-geocode");
 /* harmony import */ var reverse_geocode__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reverse_geocode__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/LastFillUpCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/LastFillUpCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1510,7 +1448,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/TimeInCarCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/TimeInCarCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1589,7 +1527,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Card/TravelDistanceTotalCard.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Card/TravelDistanceTotalCard.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1679,7 +1617,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LoadingSpinner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LoadingSpinner */ "./src/Components/LoadingSpinner.js");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/DashboardHeader.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/DashboardHeader.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1853,7 +1791,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/Footer.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2077,14 +2015,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var google_maps_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(google_maps_react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Google_Secret__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Google_Secret */ "./src/Components/GoogleMap/Google_Secret.js");
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/GoogleMap/GoogleMap.js";
+/* harmony import */ var _Google_Secret__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Google_Secret */ "./src/Components/GoogleMap/Google_Secret.js");
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/GoogleMap/GoogleMap.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-console.log(`Coming from google maps`, _Google_Secret__WEBPACK_IMPORTED_MODULE_3__["default"]);
+console.log(`Coming from google maps`, _Google_Secret__WEBPACK_IMPORTED_MODULE_4__["default"]);
 
 class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   // constructor(props) {
@@ -2168,7 +2106,7 @@ class SimpleMap extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(google_maps_react__WEBPACK_IMPORTED_MODULE_1__["GoogleApiWrapper"])({
-  apiKey: `${_Google_Secret__WEBPACK_IMPORTED_MODULE_3__["default"]}`
+  apiKey: `${_Google_Secret__WEBPACK_IMPORTED_MODULE_4__["default"]}`
 })(SimpleMap));
 
 /***/ }),
@@ -2200,7 +2138,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
 /* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/LoadingSpinner.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/Components/LoadingSpinner.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2231,42 +2169,6 @@ const LoadingSpinner = () => __jsx(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1_
 
 /***/ }),
 
-/***/ "./src/Components/TripList.js":
-/*!************************************!*\
-  !*** ./src/Components/TripList.js ***!
-  \************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-react */ "semantic-ui-react");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _pages_Dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/Dashboard/DashboardView */ "./src/pages/Dashboard/DashboardView.js");
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/Components/TripList.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-function TripData({
-  trips
-}) {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  });
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (TripData);
-
-/***/ }),
-
 /***/ "./src/pages/Dashboard/DashboardView.js":
 /*!**********************************************!*\
   !*** ./src/pages/Dashboard/DashboardView.js ***!
@@ -2283,7 +2185,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Components_DashboardHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Components/DashboardHeader */ "./src/Components/DashboardHeader.js");
 /* harmony import */ var _Components_CarData__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Components/CarData */ "./src/Components/CarData.js");
 /* harmony import */ var _Components_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Components/Footer */ "./src/Components/Footer.js");
-var _jsxFileName = "/home/phillip/Desktop/work/Driver-Dashboard/client/src/pages/Dashboard/DashboardView.js";
+var _jsxFileName = "/Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/src/pages/Dashboard/DashboardView.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2518,7 +2420,7 @@ const getDashboardAllDataQuery = apollo_boost__WEBPACK_IMPORTED_MODULE_0__["gql"
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/phillip/Desktop/work/Driver-Dashboard/client/pages/dashboard.js */"./pages/dashboard.js");
+module.exports = __webpack_require__(/*! /Users/haydenfuller/Documents/Hayden/Own Projects/gofar/Driver-Dashboard/client/pages/dashboard.js */"./pages/dashboard.js");
 
 
 /***/ }),
@@ -2578,6 +2480,17 @@ module.exports = require("google-maps-react");
 
 /***/ }),
 
+/***/ "luxon":
+/*!************************!*\
+  !*** external "luxon" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("luxon");
+
+/***/ }),
+
 /***/ "next-cookies":
 /*!*******************************!*\
   !*** external "next-cookies" ***!
@@ -2619,17 +2532,6 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-apollo");
-
-/***/ }),
-
-/***/ "react-router-dom":
-/*!***********************************!*\
-  !*** external "react-router-dom" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("react-router-dom");
 
 /***/ }),
 
