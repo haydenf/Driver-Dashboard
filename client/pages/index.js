@@ -16,9 +16,6 @@ function handleSuccessfulLogin(router) {
 }
 
 export default function LoginPage(props) {
-  if (props.authToken) {
-    return <Redirect to="/dashboard" />;
-  }
 
   const router = useRouter();
 
@@ -42,6 +39,7 @@ export default function LoginPage(props) {
 }
 
 LoginPage.getInitialProps = ctx => {
+  console.log(`THIS IS COMING FROM INDEX`,ctx)
   return {
     cookiez: Cookiez(ctx) || '',
   };

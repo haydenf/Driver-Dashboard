@@ -141,17 +141,6 @@ function handleSuccessfulLogin(router) {
 }
 
 function LoginPage(props) {
-  if (props.authToken) {
-    return __jsx(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["Redirect"], {
-      to: "/dashboard",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    });
-  }
-
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_7__["useRouter"])();
   const client = new apollo_boost__WEBPACK_IMPORTED_MODULE_3___default.a({
     uri: 'https://jt63wdhqqre6rpjo5lnylfhjqm.appsync-api.ap-southeast-2.amazonaws.com/graphql',
@@ -165,20 +154,21 @@ function LoginPage(props) {
     client: client,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 32
     },
     __self: this
   }, __jsx(_src_pages_Login_LoginView__WEBPACK_IMPORTED_MODULE_6__["default"], _extends({}, props, {
     handleSuccessfulLogin: handleSuccessfulLogin(router),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 33
     },
     __self: this
   })));
 }
 
 LoginPage.getInitialProps = ctx => {
+  console.log(`THIS IS COMING FROM INDEX`, ctx);
   return {
     cookiez: next_cookies__WEBPACK_IMPORTED_MODULE_2___default()(ctx) || ''
   };
